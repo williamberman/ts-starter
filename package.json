@@ -1,0 +1,28 @@
+{
+  "name": "constraints",
+  "version": "1.0.0",
+  "description": "TODO",
+  "main": "TODO",
+  "scripts": {
+    "lint": "tslint -c tslint.json -p tsconfig.json --fix",
+    "prebuild": "npm run-script lint",
+    "build": "tsc",
+    "test": "jest",
+    "test-debug": "node inspect ./node_modules/.bin/jest --runInBand",
+    "prestart": "npm run-script build",
+    "start": "TODO"
+  },
+  "author": "William Berman",
+  "license": "TODO",
+  "devDependencies": {
+    "@types/jest": "^24.9.0",
+    "@types/node": "^13.1.7",
+    "@types/ramda": "^0.26.39",
+    "immutable": "^4.0.0-rc.12",
+    "jest": "^24.9.0",
+    "ramda": "^0.26.1",
+    "ts-jest": "^24.3.0",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.4"
+  }
+}
